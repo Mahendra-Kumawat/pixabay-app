@@ -1,0 +1,27 @@
+@media screen and (max-width:650px) {
+    .search-manu .search input , .search-button{
+        width: 100%;
+        padding: 9px 20px;
+        margin: 0 10px;
+    }
+
+    .search{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    .img-card{
+        height: 380px;
+        width: auto;
+    }
+
+    .img-card img{
+        object-position: center center;
+    }
+}
+
+
+

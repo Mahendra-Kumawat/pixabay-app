@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.header {
+    position: relative;
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar {
+    padding: 10px 5%;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.p-video {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.left svg {
+    width: 150px;
+    cursor: pointer;
+    color: white;
+}
+
+.right i {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+
+.search-manu {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.search-manu .search {
+    height: 40px;
+}
+
+.search-manu .search input,
+button {
+    height: 100%;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+.search-manu .search input {
+    width: 500px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    outline: none;
+
+}
+
+.search-button {
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+
+}
+
+main {
+    position: relative;
+}
+
+
+
+
+.main-container {
+    padding: 30px 0;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+
+}
+
+
+.buttons {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.buttons button {
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid rgb(196, 194, 194);
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.buttons button:hover {
+    border: 1px solid black;
+}
+
+
+
+.img-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.img-card-container {
+    /* display: grid;
+    grid-template-columns: repeat(autofil, minmax(300px , 1fr)); */
+    gap: 15px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.img-card {
+    max-width: 400px;
+    height: 400px;
+    transition: 0.4s;
+}
+
+.img-card:hover {
+    transform: translateY(-3px);
+}
+
+.img-card img {
+    height: 90%;
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    object-position: 24% 22%;
+}
+
+
+.image-info {
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.image-info span {
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+.icon i {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+
+.red {
+    color: red;
+}
+
+
+
+.load-more-buttons {
+    width: 100%;
+    display: block;
+    justify-content: center;
+
+}
+
+.load-more-buttons .load-more {
+    width: 90%;
+    border: 1px solid black;
+    outline: none;
+    color: rgb(104, 101, 101);
+    padding: 20px 0;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.load-more-buttons .load-more:hover {
+    color: black;
+}
+
+
+
+/* not found  */
+
+.not-found {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 0 60px 0;
+}
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
