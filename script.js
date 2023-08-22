@@ -48,6 +48,8 @@ async function fetchData(page,query) {
     if (page == 4) {
       load_button.style.display = "none";
     }
+     title.style.display = "block";
+
     bindData(hits);
 
     loader.style.display = "none";
@@ -118,7 +120,9 @@ const buttons = document.querySelectorAll(".buttons button");
 buttons.forEach((button) => {
   button.addEventListener("click", function() {
     query = button.innerText;
+    console.log(query)
     title.innerText = `${query}s images`
+
     img_card_container.innerHTML = " ";
     fetchData(page = 1,query);
   });
